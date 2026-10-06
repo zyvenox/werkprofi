@@ -432,7 +432,7 @@ app.post("/api/contact", (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(
     `WerkProfi API läuft auf http://localhost:${PORT}`
   );
