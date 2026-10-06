@@ -1,0 +1,428 @@
+.service-details {
+  width: 100%;
+}
+
+/* ==================================================
+   Shared
+================================================== */
+
+.service-details-container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ==================================================
+   Hero
+================================================== */
+
+.service-details-hero {
+  padding: 120px 0 110px;
+
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(37, 99, 235, 0.1),
+      transparent 30%
+    ),
+    #f8fafc;
+}
+
+.service-details-header {
+  max-width: 800px;
+}
+
+.service-details-number {
+  display: inline-flex;
+
+  margin-bottom: 25px;
+
+  color: #2563eb;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+}
+
+.service-details-header h1 {
+  margin-top: 4px;
+
+  color: #0f172a;
+
+  font-size: clamp(46px, 6vw, 72px);
+  line-height: 1.04;
+  letter-spacing: -2.8px;
+  font-weight: 800;
+}
+
+.service-details-header p {
+  max-width: 650px;
+
+  margin-top: 24px;
+
+  color: #64748b;
+
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+/* ==================================================
+   Main Content
+================================================== */
+
+.service-details-content {
+  padding: 110px 0;
+
+  background: #ffffff;
+}
+
+.service-content-grid {
+  display: grid;
+
+  grid-template-columns: 1.1fr 0.9fr;
+
+  gap: 90px;
+
+  align-items: start;
+}
+
+.service-main-content h2 {
+  max-width: 650px;
+
+  margin-top: 8px;
+
+  color: #0f172a;
+
+  font-size: clamp(35px, 4vw, 50px);
+  line-height: 1.08;
+  letter-spacing: -1.5px;
+  font-weight: 800;
+}
+
+.service-main-content h2 span {
+  display: block;
+
+  color: #2563eb;
+}
+
+.service-main-content > p {
+  max-width: 650px;
+
+  margin-top: 22px;
+
+  color: #64748b;
+
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.service-contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 50px;
+
+  margin-top: 30px;
+  padding: 0 21px;
+
+  border-radius: 10px;
+
+  background: #2563eb;
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  box-shadow:
+    0 12px 26px rgba(37, 99, 235, 0.18);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.service-contact-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 17px 32px rgba(37, 99, 235, 0.24);
+}
+
+/* ==================================================
+   Features
+================================================== */
+
+.service-features {
+  padding: 30px;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+
+  background: #f8fafc;
+}
+
+.service-features h3 {
+  color: #0f172a;
+
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.service-feature-list {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 20px;
+}
+
+.service-feature {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 13px;
+
+  padding: 16px 0;
+
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.service-feature:last-child {
+  border-bottom: none;
+}
+
+.service-feature > span {
+  width: 25px;
+  height: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 8px;
+
+  background: #dcfce7;
+  color: #15803d;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.service-feature p {
+  padding-top: 3px;
+
+  color: #475569;
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* ==================================================
+   Bottom CTA
+================================================== */
+
+.service-details-bottom {
+  padding: 110px 0;
+
+  background: #f8fafc;
+}
+
+.service-bottom-box {
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 50px;
+
+  border-radius: 24px;
+
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(37, 99, 235, 0.18),
+      transparent 30%
+    ),
+    #0f172a;
+}
+
+.service-bottom-box .section-label {
+  position: relative;
+  z-index: 1;
+
+  color: #60a5fa;
+}
+
+.service-bottom-box h2 {
+  position: relative;
+  z-index: 1;
+
+  color: #ffffff;
+
+  font-size: clamp(35px, 4vw, 50px);
+  line-height: 1.08;
+  letter-spacing: -1.5px;
+  font-weight: 800;
+}
+
+.service-bottom-box h2 span {
+  display: block;
+
+  color: #60a5fa;
+}
+
+.service-bottom-box p {
+  position: relative;
+  z-index: 1;
+
+  margin-top: 18px;
+
+  color: #94a3b8;
+
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.service-bottom-box .service-contact-button {
+  position: relative;
+  z-index: 2;
+
+  flex-shrink: 0;
+
+  background: #ffffff;
+  color: #0f172a;
+
+  box-shadow: none;
+}
+
+/* ==================================================
+   Not Found
+================================================== */
+
+.service-not-found {
+  min-height: 70vh;
+
+  padding: 100px 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  background: #f8fafc;
+}
+
+.service-not-found h1 {
+  max-width: 700px;
+
+  color: #0f172a;
+
+  font-size: clamp(40px, 5vw, 60px);
+  line-height: 1.08;
+  letter-spacing: -2px;
+  font-weight: 800;
+}
+
+.service-not-found h1 span {
+  display: block;
+
+  color: #2563eb;
+}
+
+.service-back-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 50px;
+
+  margin-top: 30px;
+  padding: 0 21px;
+
+  border-radius: 10px;
+
+  background: #0f172a;
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* ==================================================
+   Responsive
+================================================== */
+
+@media (max-width: 900px) {
+  .service-details-hero {
+    padding: 90px 0;
+  }
+
+  .service-content-grid {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+  .service-bottom-box {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .service-bottom-box .service-contact-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .service-details-container {
+    padding: 0 20px;
+  }
+
+  .service-details-hero {
+    padding: 75px 0;
+  }
+
+  .service-details-header h1 {
+    font-size: 43px;
+
+    letter-spacing: -2px;
+  }
+
+  .service-details-header p {
+    font-size: 15px;
+  }
+
+  .service-details-content,
+  .service-details-bottom {
+    padding: 80px 0;
+  }
+
+  .service-main-content h2,
+  .service-bottom-box h2 {
+    font-size: 34px;
+  }
+
+  .service-features {
+    padding: 24px;
+  }
+
+  .service-bottom-box {
+    padding: 40px 25px;
+  }
+}
